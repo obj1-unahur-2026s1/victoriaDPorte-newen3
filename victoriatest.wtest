@@ -1,0 +1,19 @@
+import victoria.*
+
+describe "probar a victoria" {
+
+  test "victoria se quiere parecer a pareto" {
+    victoria.cambiarEstatura(150)
+    victoria.cambiarDisiplina(judo)
+    victoria.cambiarCantidadEntrenadores(4)
+    assert.equals(8180, victoria.presupuestoTotal())
+  }
+
+  test "victoria se quiere parecer a federer" {
+    victoria.cambiarEstatura(210)
+    victoria.cambiarDisiplina(tenis)
+    victoria.cambiarCantidadEntrenadores(2)
+    assert.equals(2415, victoria.presupuestoTotal())
+  }
+
+}
